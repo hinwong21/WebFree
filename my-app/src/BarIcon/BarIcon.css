@@ -1,0 +1,38 @@
+.barIconAnimation {
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.upperBar {
+  position: absolute;
+  top: 0;
+  transform-origin: top left;
+}
+
+.lowerBar {
+  position: absolute;
+  top: 10px;
+  transform-origin: center center;
+}
+
+.upperBarAnimation {
+  transform: rotate(45deg) !important;
+  transition: transform 0.2s ease-in-out;
+}
+
+.lowerBarAnimation {
+  transform: rotate(135deg) translateY(5px) !important;
+  transition: transform 0.2s ease-in-out;
+}
+
+.upperBarReverseAnimation {
+  transform: rotate(0deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.lowerBarReverseAnimation {
+  transform: rotate(0deg) translateY(0px);
+  transition: transform 0.2s ease-in-out;
+}
